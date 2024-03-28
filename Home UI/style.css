@@ -1,0 +1,790 @@
+@import url(https://db.onlinewebfonts.com/c/3ad5698dd1177785b94e84f04fd1632f?family=GothamSSm-Book);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "GothamSSm-Book";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ========================
+        NAV BAR      
+============================*/
+
+
+.nav{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Added lines */
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-left, .nav-center, .nav-right{   /* Added lines */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.nav-left{
+    /* height: 56px;
+    width: 410.37px;
+    display: flex;
+    align-items: center; */
+    padding-left: 48px;
+}
+
+.nav-left img{
+    width: 122.5px;
+}
+
+.nav-center{
+    width: 459.28px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-center a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 4px;
+
+}
+
+.nav-center a:hover{
+    background-color: rgba(62, 62, 66, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.nav-right{
+    height: 56px;
+    width: 410.37px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+    gap: 2px;
+}
+
+.nav-right img{
+    width: 34px;
+    padding: 6.5px 6.5px;
+    border-radius: 3px;
+}
+
+.nav-right img:hover{
+    background-color: rgba(62, 62, 66, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.menu-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 4px;
+    display: none;
+}
+
+.menu-btn a:hover{
+    background-color: rgba(62, 62, 66, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+
+
+/* ========================
+       VIDEO CONTAINER      
+============================*/
+
+
+.vid{
+    width: 100%;
+    height: 727px;
+    overflow: hidden;
+    position: relative;
+}
+
+.vid .text{
+    position: absolute;
+    top: 59%;
+    left: 4%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    width: 650px;
+}
+
+.text h1{
+    font-size: 39px;
+}
+
+.text p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.text button{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px 24px 4px 24px;
+}
+
+
+
+.vid video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container .img{
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-------- container 1 --------*/
+
+
+.img .imgText1{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+.imgText1 h2{
+    font-size: 40px;
+}
+
+.imgText1 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.imgText1 p{
+    font-size: 12px;
+}
+
+.buttons1{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons1 .btns1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons1 .btns1 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons1 .btns1 .btn1{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons1 .btns1 .btn2{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.buttons1 p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+/*-------- container 2 --------*/
+
+.imgText2{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+}
+
+.imgText2 h3{
+    font-size: 23px;
+    letter-spacing: -0.4px;
+    font-weight: 500;
+}
+
+.imgText2 h2{
+    font-size: 40px;
+
+}
+
+.imgText2 p{
+    font-size: 20px;
+}
+.buttons2{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons2 .btns2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons2 .btns2 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons2 .btns2 .btn3{
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons2 .btns2 .btn4{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.buttons2 p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.buttons2 p a{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: #000;
+}
+
+.buttons2 p a:hover{
+    border-bottom: 1.5px solid black;
+}
+
+/*-------- container 3 --------*/
+
+.imgText3{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+}
+
+.imgText3 h2{
+    font-size: 40px;
+}
+
+.imgText3 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.imgText3 p{
+    font-size: 12px;
+}
+
+.buttons3{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons3 .btns3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons3 .btns3 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons3 .btns3 .btn5{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons3 .btns3 .btn6{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.buttons3 p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+}
+
+.buttons3 p a{
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.buttons3 p a:hover{
+    border-bottom: 2px solid white;
+}
+
+/*-------- container 4 --------*/
+
+.imgText4{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+}
+
+.imgText4 h2{
+    font-size: 40px;
+}
+
+.imgText4 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.imgText4 p{
+    font-size: 12px;
+}
+
+.buttons4{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons4 .btns4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons4 .btns4 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons4 .btns4 .btn7{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons4 .btns4 .btn8{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.buttons4 p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.buttons4 p a{
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.buttons4 p a:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
+/*-------- container 5 --------*/
+
+
+.buttons5{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons5 .btns5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons5 .btns5 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons5 .btns5 .btn9{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons5 .btns5 .btn10{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+/*-------- container 6 --------*/
+
+.imgText6{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.imgText6 h2{
+    font-size: 40px;
+    color: white;
+}
+
+.imgText6 p a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.imgText6 p a:hover{
+    border-bottom: 2px solid white;
+}
+
+.buttons6{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons6 .btns6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons6 .btns6 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons6 .btns6 .btn11{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons6 .btns6 .btn12{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+/*-------- container 7 --------*/
+
+.imgText7{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.imgText7 h2{
+    font-size: 40px;
+}
+
+.imgText7 p{
+    font-size: 14px;
+}
+
+.buttons7{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons7 .btns7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons7 .btns7 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons7 .btns7 .btn13{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons7 .btns7 .btn14{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+/*-------- container 8 --------*/
+
+.imgText8{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.imgText8 h2{
+    font-size: 40px;
+}
+
+.buttons8{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.buttons8 .btns8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons8 .btns8 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons8 .btns8 .btn15{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.buttons8 .btns8 .btn16{
+    background-color: rgba(34, 34, 34, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*-------- container 9 --------*/
+
+.imgText9{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.imgText9 h2{
+    font-size: 40px;
+}
+
+.buttons9{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.buttons9 .btns9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.buttons9 .btns9 button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: none;
+    width: 264px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons9 .btns9 .btn17{
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------- media query --------- */
+
+@media only screen and (max-width:1200px){
+    nav .nav-center{
+        display: none;
+    }
+    nav .nav-right{
+        display: none;
+    }
+    nav .menu-btn a{
+        display: block;
+        z-index: 1;
+    }
+}
